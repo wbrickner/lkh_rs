@@ -25,7 +25,7 @@ impl<W: Write> Coordinates<W> {
 
     coordinate
       .into_iter()
-      .try_for_each(|v| write!(w, "{:.5e} ", v))?;
+      .try_for_each(|v| write!(w, "{:.10e} ", v))?;
       // 1 5.49480e+02 2.93629e+01
 
     writeln!(w)?;
