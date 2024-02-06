@@ -1,0 +1,14 @@
+[package]
+name = "lkh"
+version = "0.1.0"
+edition = "2021"
+description = "A Rust wrapper for the LKH TSP solver"
+license = "MIT"
+
+[dependencies]
+memmap = "0.7.0"
+object-pool = "0.5.4"
+rand = "0.8.5"
+static_init = "1.0.3"
+zeroize = { version = "1.7.0", features = ["std", "zeroize_derive"] }
+zeroize_derive = "1.4.2"
